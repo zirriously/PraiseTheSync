@@ -27,6 +27,7 @@ namespace PraiseTheSync
                 {
                     string temp = value.Remove(0, 1);
                     paths.Add(temp);
+                    Console.WriteLine($"Added {temp}");
                 }
                 else if (value.StartsWith("-"))
                 {
@@ -37,8 +38,11 @@ namespace PraiseTheSync
                     Console.WriteLine("Invalid path | " + value);
                 }
             }
+            Console.WriteLine($"Finished. Saving to {backupLoc}");
 
             var saveFiles = new SaveFiles(paths, backupLoc);
+            saveFiles.Save();
+
             Console.ReadKey();
 
         }
