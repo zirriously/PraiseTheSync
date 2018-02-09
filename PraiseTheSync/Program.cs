@@ -29,22 +29,57 @@ namespace PraiseTheSync
                     paths.Add(temp);
                     Console.WriteLine($"Added {temp}");
                 }
-                else if (value.StartsWith("-"))
+                else if (value.StartsWith("."))
                 {
                     backupLoc = value.Remove(0, 1);
+                    Console.WriteLine($"Backup folder located at {backupLoc}\n");
                 }
                 else
                 {
-                    Console.WriteLine("Invalid path | " + value);
+                    if (!value.StartsWith("/"))
+                        Console.WriteLine("Invalid path | " + value);
                 }
             }
-            Console.WriteLine($"Finished. Saving to {backupLoc}");
+            
+            UserInput();
 
             var saveFiles = new SaveFiles(paths, backupLoc);
             saveFiles.Save();
 
-            Console.ReadKey();
+            for (int i = 5; i > 0; i--)
+            {
+                Console.WriteLine($"Exiting in {i} seconds...");
+                System.Threading.Thread.Sleep(1000);
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
+            }
 
+            Console.ReadKey();
+        }
+
+        private static void UserInput()
+        {
+            while (true)
+            {
+                Console.WriteLine($"\nWould you like to backup these folders? Y/N");
+                ConsoleKeyInfo ckey = Console.ReadKey();
+                if (ckey.Key == ConsoleKey.N)
+                {
+                    Console.SetCursorPosition(0, Console.CursorTop - 1);
+                    Console.WriteLine("Exiting in 1 second...");
+                    System.Threading.Thread.Sleep(1000);
+                    Environment.Exit(0);
+                }
+                else if (ckey.Key == ConsoleKey.Y)
+                {
+                    Console.SetCursorPosition(0, Console.CursorTop - 1);
+                    Console.WriteLine("Saving folders...");
+                }
+                else
+                {
+                    continue;
+                }
+                break;
+            }
         }
     }
 }

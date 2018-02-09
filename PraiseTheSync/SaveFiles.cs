@@ -24,13 +24,15 @@ namespace PraiseTheSync
             string bkUpFolderNameSanitised = bkUpFolderName.Replace('/', '-').Replace(':', '-');
 
             DirectoryInfo dirInfo = Directory.CreateDirectory(_backupLoc + '\\' +  bkUpFolderNameSanitised);
-            Console.WriteLine(_backupLoc + bkUpFolderNameSanitised);
 
             foreach (var value in _paths)
             {
                 DirectoryInfo sourcePath = new DirectoryInfo(value);
                 CopyFilesRecursively(sourcePath, dirInfo);
+                Console.WriteLine($"Successfully backed up {sourcePath} to {dirInfo}.");
             }
+
+            Console.WriteLine($"All done. Backed up {_paths.Count} folders.");
         }
 
 
