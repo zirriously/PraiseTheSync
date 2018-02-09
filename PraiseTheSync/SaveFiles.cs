@@ -36,7 +36,7 @@ namespace PraiseTheSync
         }
 
 
-        static DirectoryInfo CopyFilesRecursively(DirectoryInfo source, DirectoryInfo target)
+        static void CopyFilesRecursively(DirectoryInfo source, DirectoryInfo target)
         {
             var newDirectoryInfo = target.CreateSubdirectory(source.Name);
             foreach (var fileInfo in source.GetFiles())
@@ -44,8 +44,6 @@ namespace PraiseTheSync
 
             foreach (var childDirectoryInfo in source.GetDirectories())
                 CopyFilesRecursively(childDirectoryInfo, newDirectoryInfo);
-
-            return newDirectoryInfo;
         }
     }
 }

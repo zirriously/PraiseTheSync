@@ -15,7 +15,7 @@ namespace PraiseTheSync
         {
             Console.WriteLine("Fetching saves...");
 
-            // Load paths from json
+            // Load paths from ..\paths.txt
             List<string> paths = new List<string>();
             string backupLoc = String.Empty;
 
