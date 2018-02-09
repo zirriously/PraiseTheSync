@@ -31,13 +31,14 @@ namespace PraiseTheSync
             else
             {
                 Console.WriteLine("Paths.txt does not exist. It must be placed in the same directory as the executable." +
-                                  "Creating empty .txt file then exiting.");
-                System.IO.File.WriteAllText(_emptyPathsTxt, "Paths.txt");
-                System.Threading.Thread.Sleep(2000);
+                                  "\nCreating empty .txt file then exiting." +
+                                  "\nPlease fill out the file accordingly then run the program again.");
+                System.IO.File.WriteAllText("Paths.txt", _emptyPathsTxt);
+                System.Threading.Thread.Sleep(6000);
                 Environment.Exit(0);
             }
 
-            foreach (var value in paths)
+            foreach (var value in paths.ToList())
             {
                 if (value.StartsWith("+"))
                 {
