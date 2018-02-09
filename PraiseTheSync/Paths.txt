@@ -1,9 +1,8 @@
 ﻿/BACKUP FOLDER LOCATION BELOW THIS LINE
 /Only one for now, but will maybe make it work with multiple output locations later
-/Do not delete the '.' prefix.
-.Dummy\Path
+/Remember to not del
+.C:\Users\zirr_\OneDrive\PraiseTheSync
 /FOLDERS TO BACKUP
-/Do not delete the '+' prefix.
-+Dummy\Path\One
-+Dummy\Path\Two
-+Dummy\Path\Three
++C:\Users\zirr_\Desktop\Dummy\dummy1
++C:\Users\zirr_\Desktop\Dummy\dummy2
++C:\Users\zirr_\Desktop\Dummy\dummy3
