@@ -22,12 +22,28 @@ namespace PraiseTheSync
         {
             string bkUpFolderName = System.DateTime.Now.ToShortDateString() + " " + System.DateTime.Now.ToShortTimeString();
             string bkUpFolderNameSanitised = bkUpFolderName.Replace('/', '-').Replace(':', '-');
+
             DirectoryInfo dirInfo = Directory.CreateDirectory(_backupLoc + '\\' +  bkUpFolderNameSanitised);
             Console.WriteLine(_backupLoc + bkUpFolderNameSanitised);
+
             foreach (var value in _paths)
             {
-                Console.WriteLine(value);
+                DirectoryInfo sourcePath = new DirectoryInfo(value);
+                CopyFilesRecursively(sourcePath, dirInfo);
             }
+        }
+
+
+        static DirectoryInfo CopyFilesRecursively(DirectoryInfo source, DirectoryInfo target)
+        {
+            var newDirectoryInfo = target.CreateSubdirectory(source.Name);
+            foreach (var fileInfo in source.GetFiles())
+                fileInfo.CopyTo(Path.Combine(newDirectoryInfo.FullName, fileInfo.Name));
+
+            foreach (var childDirectoryInfo in source.GetDirectories())
+                CopyFilesRecursively(childDirectoryInfo, newDirectoryInfo);
+
+            return newDirectoryInfo;
         }
     }
 }

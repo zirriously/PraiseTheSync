@@ -1,4 +1,4 @@
-﻿+dummy1
-+dummy2
-+dummy3
+﻿+C:\Users\zirr_\Desktop\Dummy\dummy1
++C:\Users\zirr_\Desktop\Dummy\dummy2
++C:\Users\zirr_\Desktop\Dummy\dummy3
 -C:\Users\zirr_\OneDrive\PraiseTheSync
