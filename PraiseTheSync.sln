@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraiseTheSync", "PraiseTheSync\PraiseTheSync.csproj", "{CE81EF90-0E2A-41F4-84DD-88B0670B1A0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraiseTheSyncWPF", "PraiseTheSyncWPF\PraiseTheSyncWPF.csproj", "{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CE81EF90-0E2A-41F4-84DD-88B0670B1A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE81EF90-0E2A-41F4-84DD-88B0670B1A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE81EF90-0E2A-41F4-84DD-88B0670B1A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
