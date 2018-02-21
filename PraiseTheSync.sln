@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraiseTheSync", "PraiseTheSync\PraiseTheSync.csproj", "{CE81EF90-0E2A-41F4-84DD-88B0670B1A0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraiseTheSyncWPF", "PraiseTheSyncWPF\PraiseTheSyncWPF.csproj", "{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PraiseTheSyncWinForms", "PraiseTheSyncWinForms\PraiseTheSyncWinForms.csproj", "{35B86EA4-86E8-4C3B-A592-AD78EB568422}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{CE81EF90-0E2A-41F4-84DD-88B0670B1A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE81EF90-0E2A-41F4-84DD-88B0670B1A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE81EF90-0E2A-41F4-84DD-88B0670B1A0F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{336A1B1B-5224-4CAF-9231-4CBBFEB6559B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B86EA4-86E8-4C3B-A592-AD78EB568422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B86EA4-86E8-4C3B-A592-AD78EB568422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B86EA4-86E8-4C3B-A592-AD78EB568422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B86EA4-86E8-4C3B-A592-AD78EB568422}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
